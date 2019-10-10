@@ -1,1 +1,4 @@
-* time series forecast with tensorflow
+
+* Time Series forecast with tensorflow
+
+  refs: https://www.tensorflow.org/tutorials/structured_data/time_series
