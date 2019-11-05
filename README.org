@@ -2,3 +2,39 @@
 * Time Series forecast with tensorflow
 
   refs: https://www.tensorflow.org/tutorials/structured_data/time_series
+* Automated system
+** Install tensorflow 2.0 
+
+   #+begin_src sh
+     # Create env 
+     conda create -n tensorflow-timeseries
+
+     # activate env
+     conda activate tensorflow-timeseries
+
+     # install tensorflow 2.0 
+     pip install tensorflow # now is default in pip
+     python -c "import tensorflow as tf; print(tf.__version__)"
+
+     # enable the env in jupyter notebook
+     conda install ipykernel
+
+     # normally jupyter will automatic detect alll conda envs. INcase it fail you can add
+     python -m ipykernel install --user --name=tensorflow-timeseries
+
+     # install requirements
+     conda install -c anaconda numpy pandas matplotlib
+
+     # install tensorboard
+     #pip install -q tf-nightly-2.0-preview
+
+     # deactivate 
+     conda deactivate
+
+     # generate yaml file
+     conda env export > tensorflow-timeseries.yaml 
+
+     # create env from yaml
+     conda env create -f tensorflow-timeseries.yaml 
+   #+end_src
+
